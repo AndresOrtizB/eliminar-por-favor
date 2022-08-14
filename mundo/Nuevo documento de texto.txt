@@ -1,1 +1,38 @@
 este documento es de prueba para cargar en github
+
+de aqui pondre texto aleatorio para prueba de github
+
+<?php
+
+echo "Ingrese la cantidad de datos a tratar";
+// your code goes here
+fscanf(STDIN, "%s", $cantidad);
+for ($i = 1; $i <= $cantidad; $i++) {
+    
+    echo "Ingresa los tres valores correspondientes separados por espacio";
+    fscanf(STDIN, "%s", $valores);
+
+    $lista = explode(" ", $valores);
+
+    // intval( $poblacionInicial );  
+    // fscanf(STDIN, "%s", $personasQueSeFueron);
+    // intval( $personasQueSeFueron );  
+    // fscanf(STDIN, "%s", $personasQueEntraron);
+    // intval( $personasQueEntraron ); 
+    
+    intval( $lista[0] );  
+    intval( $lista[1] );  
+    intval( $lista[2] );  
+    
+    $resultado = $lista[0] - $lista[1] + $lista[2] ;
+    
+    // echo "Los valores ingresados son : Poblacion Inicial: '$lista[0]' ,\n","Personas que Entraron : '$lista[1]'","\n"," Personas que se fueron : '$$lista[2]'","\n";
+    echo $resultado;
+    
+    $resultado = 0;
+    echo "\n";
+   
+}
+
+
+?>
